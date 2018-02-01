@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{DA12E9E7-58FB-414B-8697-100F50930BC9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="komm21 Status">
+    <Files>
+      <File FileName="komm21/SmartChatCells/OutgoingViewCell.xaml" Line="42" Column="1" />
+      <File FileName="komm21/SmartChatCells/OutgoingViewCell.xaml.cs" Line="4" Column="21" />
+      <File FileName="komm21/SmartChatCells/MessageDataTemplateSelector.cs" Line="22" Column="87" />
+      <File FileName="komm21/Models/Message.cs" Line="10" Column="17" />
+      <File FileName="komm21 Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.komm21.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6EDB167C-A57C-4E09-825F-A5C3965A8A75">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.komm21.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
