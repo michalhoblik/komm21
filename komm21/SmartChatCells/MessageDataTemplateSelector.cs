@@ -5,21 +5,20 @@ namespace komm21.SmartChatCells
 {
     public class MessageDataTemplateSelector : DataTemplateSelector
     {
-        readonly DataTemplate incomingDataTemplate;
-        readonly DataTemplate outgoingDataTemplate;
+        private readonly DataTemplate _incomingDataTemplate;
+        private readonly DataTemplate _outgoingDataTemplate;
 
         public MessageDataTemplateSelector()
         {
-            incomingDataTemplate = new DataTemplate(typeof(IncomingViewCell));
-            outgoingDataTemplate = new DataTemplate(typeof(OutgoingViewCell));
+            _incomingDataTemplate = new DataTemplate(typeof(IncomingViewCell));
+            _outgoingDataTemplate = new DataTemplate(typeof(OutgoingViewCell));
         }
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            var messageVm = item as Message;
-            if (messageVm == null)
+            if (!(item is Message messageVm))
                 return null;
-            return messageVm.IsIncoming ? incomingDataTemplate : outgoingDataTemplate;
+            return messageVm.IsIncoming ? _incomingDataTemplate : _outgoingDataTemplate;
         }
     }
 }

@@ -25,17 +25,22 @@
                       VerticalOptions="Center" Source="squirrel.jpg" ></plugin:CircleImage>
     <Frame Grid.Row="0"  Grid.Column="1">
         <Frame.HasShadow>
-            <OnPlatform x:TypeArguments="x:Boolean" iOS="false" Android="true"/>
+            <OnPlatform x:TypeArguments="x:Boolean">
+                <On Platform="iOS" Value="false" />
+                <On Platform="Android" Value="true" />
+            </OnPlatform>
         </Frame.HasShadow>
         <Frame.BackgroundColor>
-            <OnPlatform x:TypeArguments="Color" iOS="#F5F5F5" Android="White"/>
-        </Frame.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color" >
+                    <On Platform="iOS" Value="#F5F5F5" />
+                    <On Platform="Android" Value="White" />
+                </OnPlatform>
+            </Frame.BackgroundColor>
             <StackLayout>
                 <Image IsVisible="{Binding HasAttachement}" WidthRequest="175" HeightRequest="175" Source="{Binding AttachementUrl}" />
                 <Label TextColor="Black"  Text="{Binding Text}" />
             </StackLayout>
     </Frame>
-    <Label Grid.Row="1" FontSize="Micro" Grid.Column="1" HorizontalTextAlignment="End"  Text="{Binding MessageDateTime, StringFormat='{0:MM/dd/yyyy hh:mm tt}'}" TextColor="Gray"></Label>
-    
-  </Grid>
+        <Label Grid.Row="1" FontSize="Micro" Grid.Column="1" HorizontalTextAlignment="End"  Text="{Binding MessageDateTime, StringFormat='{0:dd.MM.yyyy HH:mm}'}" TextColor="Gray"></Label>
+    </Grid>
 </ViewCell>

@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using komm21.Views;
+using Xamarin.Forms;
 
 namespace komm21
 {
@@ -7,6 +9,11 @@ namespace komm21
         public komm21Page()
         {
             InitializeComponent();
+        }
+
+        private void BtnChatPage_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new SmartChatPage());
         }
     }
 }

@@ -25,14 +25,17 @@
                 VerticalOptions="Center" Source="baboon.jpg"/>
         <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#03A9F4">
             <Frame.HasShadow>
-                <OnPlatform x:TypeArguments="x:Boolean" iOS="false" Android="true"/>
+                <OnPlatform x:TypeArguments="x:Boolean">
+                    <On Platform="iOS" Value="false" />
+                    <On Platform="Android" Value="true" />
+                </OnPlatform>
             </Frame.HasShadow>
             <StackLayout>
                 <Image IsVisible="{Binding HasAttachement}" HeightRequest="175" WidthRequest="175" Source="{Binding AttachementUrl}" />
                 <Label TextColor="White" Text="{Binding Text}" />
             </StackLayout>
         </Frame>
-        
-        <Label FontSize="Micro" Grid.Row="1" Grid.Column="1" Text="{Binding MessageDateTime, StringFormat='{0:MM/dd/yyyy hh:mm tt}'}" TextColor="Gray"></Label>  
+
+        <Label FontSize="Micro" Grid.Row="1" Grid.Column="1" Text="{Binding MessageDateTime, StringFormat='{0:dd.MM.yyyy HH:mm}'}" TextColor="Gray"></Label>  
     </Grid>
 </ViewCell>
