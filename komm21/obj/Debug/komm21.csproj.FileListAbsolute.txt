@@ -39,3 +39,6 @@ C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.SmartChatCells.Outgo
 C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.Views.SmartChatPage.xaml.g.cs
 C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.dll
 C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.pdb
+C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.csprojResolveAssemblyReference.cache
+C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.Views.MainPage.xaml.g.cs
+C:\Users\Michal\Source\Repos\komm21\komm21\obj\Debug\komm21.Views.SettingsPage.xaml.g.cs

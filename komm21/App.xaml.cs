@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using komm21.Views;
+using Xamarin.Forms;
 
 namespace komm21
 {
@@ -8,7 +9,7 @@ namespace komm21
         {
             InitializeComponent();
 
-            MainPage = new komm21Page();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
